@@ -1,0 +1,21 @@
+{% extends "main/header.html" %}
+
+
+{% block content %}
+  <div class="row">
+  	{% for tut in tutorials %}
+    <div class="col s12 m6">
+      <div class="card light-green darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{tut.tutorial_title}}</span>
+          <p>{{tut.tutorial_content}}</p>
+        </div>
+        <div class="card-action light-green darken-3">
+          <a href="#">Visit</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

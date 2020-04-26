@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<!-- <head>
-	<title>
-	CovidAnand Now I will begin to add new template.
-	</title>
-	{% load static %}
-	<link rel="stylesheet" type="text/css" href="{% static 'css/materialize.css'%}">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</head> -->
+
 
 <head>
     <meta charset="UTF-8">
@@ -43,37 +34,3 @@
 
 
 
-
-<body style="background-color: black;">
-
-
-<img src="{% static 'media/images/jpg.png' %}">
-
-{% include 'main/includes/navbar.html' %}
-
-
-
-<!-- There was supposed to be a slider here -->
-
-{% include 'main/includes/messages.html' %}
-
-{% include 'main/includes/first_column.html' %}
-
-{% include 'main/includes/service.html' %}
-
-{% include 'main/includes/blog.html' %}
-
-{% include 'main/includes/funfacts.html' %}
-
-{% include 'main/includes/footer.html'%}
-
-
-
-
-  <div class="container">
-  {% block content %}
-  {% endblock %}
-  </div>
-
-</body>
-</html>

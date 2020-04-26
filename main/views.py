@@ -31,7 +31,7 @@ def single_slug(request, single_slug):
 
 def homepage(request):
 	return render(request=request,
-			template_name= "main/categories.html",
+			template_name= "main/home_contents.html",
 			context={}
 			)
 

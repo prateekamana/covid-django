@@ -1,21 +1,26 @@
-{% extends "main/header.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Covid19</title>
+{% load static %}
 
+</head>
+<body>
+{% include 'main/includes/header.html'%}
+{% include 'main/includes/navbar.html'%}
+
+<img src="{% static 'media/images/jpg.png' %}" style="width: 100%">
 
 {% block content %}
-  <div class="row">
-  	{% for tut in tutorials %}
-    <div class="col s12 m6">
-      <div class="card light-green darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">{{tut.tutorial_title}}</span>
-          <p>{{tut.tutorial_content}}</p>
-        </div>
-        <div class="card-action light-green darken-3">
-          <a href="#">Visit</a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
 {% endblock %}
+
+{% include 'main/includes/footer.html' %}
+</body>
+</html>
+
+
+
+
+
+
+

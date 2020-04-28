@@ -1,12 +1,17 @@
-{% extends "main/header.html" %}
+{% extends "main/home.html" %}
+
 
 
 {% block content %}
+<div class="container">
 	<form method="POST">
 		{% csrf_token %}
 		{{form.as_p}}
 		<button type="submit" class="btn light-green darken-2">Submit</button>
 	</form>
+</div>
 <br><br>
 	If you already have an account,<a href="/login"><strong> login</strong></a> instead.
 {% endblock %}
+
+{% include 'main/includes/footer.html' %}

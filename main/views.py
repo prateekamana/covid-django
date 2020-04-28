@@ -31,8 +31,8 @@ def single_slug(request, single_slug):
 
 def homepage(request):
 	return render(request=request,
-			template_name= "main/categories.html",
-			context={"categories": TutorialCategory.objects.all()}
+			template_name= "main/home_contents.html",
+			context={}
 			)
 
 def register(request):

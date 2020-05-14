@@ -85,3 +85,7 @@ def login_req(request):
 	form = AuthenticationForm()
 	return render(request, 'main/login.html', {"form":form})
 
+def aboutus(request):
+
+	return render(request, 'main/aboutus.html', {})
+

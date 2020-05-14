@@ -112,5 +112,5 @@ def login_req(request):
 
 
 	form = AuthenticationForm()
-	return render(request, 'main/includes/lo.html', {"form":form})
+	return render(request, 'main/login.html', {"form":form})
 

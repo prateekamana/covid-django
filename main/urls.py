@@ -34,8 +34,5 @@ urlpatterns = [
     path('aboutus/', views.aboutus, name="aboutus"),
     path ('overview/aboutcorona/',views.overview_aboutcorona ),
     path('blogs/',views.blogs),
-
-
-    path('lo/', views.login_req, name="login"),
     path('<single_slug>', views.single_slug, name="single_slug")
 ]

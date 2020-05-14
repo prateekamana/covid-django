@@ -25,5 +25,17 @@ urlpatterns = [
     path('register/', views.register, name="register"),
     path('logout/', views.logout_req, name="logout"),
     path('login/', views.login_req, name="login"),
+    path ('overview/' ,views.overview ),
+    path ('overview/about/' ,views.overview_about ),
+    path ('overview/contact/' ,views.overview_contact ),
+    path ('resources/' ,views.resources ),
+    path ('survey/' ,views.survey ),
+    path('overview/api/',views.api),
+    path('aboutus/', views.aboutus, name="aboutus"),
+    path ('overview/aboutcorona/',views.overview_aboutcorona ),
+    path('blogs/',views.blogs),
+
+
+    path('lo/', views.login_req, name="login"),
     path('<single_slug>', views.single_slug, name="single_slug")
 ]

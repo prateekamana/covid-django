@@ -31,8 +31,8 @@ def single_slug(request, single_slug):
 
 def homepage(request):
 	return render(request=request,
-			template_name= "main/categories.html",
-			context={"categories": TutorialCategory.objects.all()}
+			template_name= "main/home_contents.html",
+			context={}
 			)
 
 def register(request):
@@ -63,6 +63,35 @@ def logout_req(request):
 	messages.info(request, "Logged out successfully!")
 	return redirect("main:homepage")
 
+def overview(request):
+	return render( request, "main/overview.html")
+def overview_contact(request):
+	return render( request, "main/contact.html")
+
+def overview_about(request):
+	return render( request, "main/about.html")
+
+def resources(request):
+	return render( request, "main/resource.html")	
+
+
+def api(request):
+	return render( request, "main/api.html")	
+
+def overview_aboutcorona(request):
+	return render( request, "main/about-corona.html")
+	
+
+def survey(request):
+	return render( request, "main/survey.html")		
+
+def blogs(request):
+	return render( request, "main/blogs.html")	
+
+def aboutus(request):
+	return render(request, 'main/aboutus.html')	
+
+
 
 def login_req(request):
 	
@@ -83,5 +112,5 @@ def login_req(request):
 
 
 	form = AuthenticationForm()
-	return render(request, 'main/login.html', {"form":form})
+	return render(request, 'main/includes/lo.html', {"form":form})
 
